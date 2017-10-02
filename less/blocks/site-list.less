@@ -1,9 +1,7 @@
 .site-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  display: block;
   text-align: center;
-  height: 328px;
+  min-height: 328px;
   .list-unstile();
 
   &__item {
@@ -44,10 +42,38 @@
 
 @media (min-width: @tablet-width) {
   .site-list {
-    min-height: 365px;
+    min-height: 100px;
+
+    &__logo {
+      min-height: 109px;
+    }
   }
 
-  &__logo {
-    min-height: 109px;
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    height: 110px;
+
+    &__item {
+      min-width: 80px;
+      font-weight: @font-weight__regular;
+      text-transform: none;
+      background-color: transparent;
+      border-top: none;
+      border-bottom: none;
+    }
+
+    &__logo {
+      width: 110px;
+      min-height: 55px;
+    }
+
+
   }
 }

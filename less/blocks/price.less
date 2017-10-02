@@ -5,3 +5,39 @@
   text-align: center;
   background-color: @bg-lightgray;
 }
+
+
+@media (min-width: @tablet-width) {
+  .price {
+    width: 660px;
+
+    &__wrapper {
+      display: table;
+      width: 620px;
+    }
+
+    &__column {
+      display: table-column;
+    }
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .price {
+    width: 940px;
+
+
+    &__wrapper {
+      display: table;
+      width: 940px;
+      margin: 0 auto;
+      padding-top: 100px;
+    }
+
+    &__column {
+      display: table-column;
+    }
+  }
+
+}

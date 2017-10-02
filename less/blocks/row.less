@@ -3,7 +3,7 @@
 
   &__head-list,
   &__content-list {
-    padding: 0;
+    .list-unstile()
   }
 
   &__head-item1 {
@@ -45,5 +45,37 @@
     color: @grayblue;
   }
 
+}
 
+@media (min-width: @tablet-width) {
+  .row {
+    display: table-header-group;
+
+
+    &__head-item2,
+    &__head-item3,
+    &__content-item2,
+    &__content-item3 {
+      display: block;
+    }
+
+    &__head-item2,
+    &__head-item3 {
+    min-height: 95px;
+    background-color: @grayblue;
+  }
+
+    &__head-list {
+      display: table-row;
+    }
+
+    &__head-item {
+      display: table-cell;
+    }
+
+    &__col {
+      display: none;
+    }
+
+  }
 }
