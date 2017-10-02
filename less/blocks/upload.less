@@ -1,5 +1,5 @@
 .upload {
-  height: 930px;
+  min-height: 530px;
   background-color: @bg-lightgray;
 
 
@@ -10,8 +10,53 @@
   }
 
   &__form {
-    height: 350px;
+    min-height: 250px;
+    margin: 0;
     background-color: @white;
   }
 
 }
+
+@media (min-width: @tablet-width) {
+  .upload {
+    width: 620px;
+    min-height: 500px;
+    margin: 0 auto;
+
+    &__text {
+      padding: 50px 0;
+      background-color: @white;
+    }
+
+    &__wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+      &__image {
+        width: 30%;
+      }
+
+      &__form {
+        width: 40%;
+      }
+
+      &__list {
+        .list-unstile();
+
+      }
+
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .upload {
+      width: 940px;
+
+      &__form {
+        width: 60%;
+      }
+
+    }
+  }
