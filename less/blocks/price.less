@@ -1,7 +1,44 @@
 .price {
-  width: 320px;
+  width: auto;
   min-height: 470px;
   margin: 0 auto;
   text-align: center;
   background-color: @bg-lightgray;
+}
+
+
+@media (min-width: @tablet-width) {
+  .price {
+    width: 620px;
+    padding: 0 20px;
+
+    &__wrapper {
+      display: table;
+      width: 580px;
+    }
+
+    &__column {
+      display: table-column;
+    }
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .price {
+    width: 940px;
+
+
+    &__wrapper {
+      display: table;
+      width: 940px;
+      margin: 0 auto;
+      padding-top: 100px;
+    }
+
+    &__column {
+      display: table-column;
+    }
+  }
+
 }

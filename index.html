@@ -5,20 +5,21 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <meta name="description" content="HTML Academy, Проект Пинк, Продвинутый HTML и CSS - 2017">
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__logo">
+        <a class="main-nav__link-logo" href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк главная страница" width="75" height="22"></a>
+      </div>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__logo">
-            <a class="site-list__link-logo" href="index.html"><img src="http://placehold.it/75x22" alt="Логотип Пинк главная страница" width="75" height="22"></a>
-          </li>
+
           <li class="site-list__item site-list__item--activ">
             <a class="site-list__link">Главная</a>
           </li>
@@ -39,24 +40,27 @@
   <main class="page-main">
     <h1 class="visually-hidden">Пинк – приложение, которое менят мир, поднимает настроение и позволяет заводить новых друзей</h1>
 
-    <section class="intro">
+    <section class="intro intro__index intro--full">
       <h2 class="visually-hidden">Презентация приложения</h2>
       <div class="intro__wrapper">
-        <p class="intro__link intro-btn">
-          <a class="intro-btn__link" href="#">Скачать приложение</a>
-        </p>
-        <ul class="intro__market market-list">
-          <li class="market-list__item">
-            <a href="#"><img src="http://placehold.it/47x56" alt="Логотип Apple" width="47" height="56"></a>
-          </li>
-          <li class="market-list__item">
-            <a href="#"><img src="http://placehold.it/43x47" alt="Логотип Android" width="43" height="47"></a>
-          </li>
-          <li class="market-list__item">
-            <a href="#"><img src="http://placehold.it/44x41" alt="Логотип Microsoft" width="44" height="41"></a>
-          </li>
-        </ul>
-        <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="intro__promo-block">
+          <h3 class="intro__header">Взгляните<br>на жизнь<br>иначе!</h3>
+          <p class="intro__link intro-btn">
+            <a class="intro-btn__link" href="#">Скачать приложение</a>
+          </p>
+          <ul class="intro__market market-list">
+            <li class="market-list__item">
+              <a href="#"><img src="img/logo-apple.svg" alt="Логотип Apple" width="47" height="56"></a>
+            </li>
+            <li class="market-list__item">
+              <a href="#"><img src="img/logo-android.svg" alt="Логотип Android" width="43" height="47"></a>
+            </li>
+            <li class="market-list__item">
+              <a href="#"><img src="img/logo-microsoft.svg" alt="Логотип Microsoft" width="44" height="41"></a>
+            </li>
+          </ul>
+          <p class="intro__text">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
     </section>
 
@@ -66,37 +70,53 @@
         <p class="slogan__text">Устали от серости мегаполиса?</p>
         <p class="slogan__text">Нам есть, что вам предложить!</p>
       </div>
-      <ul class="inform__list">
-        <li class="inform__item merit-list">
-          <b class="merit-list__header">Поднимает настроение</b>
-          <p class="merit-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="inform__item merit-list">
-          <b class="merit-list__header">Меняет мир вокруг</b>
-          <p class="merit-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="inform__item merit-list">
-          <b class="merit-list__header">Заводит новых друзей</b>
-          <p class="merit-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
-      <figure class="inform__image">
-        <img src="img/iphone-screen-mobile@1x.png" alt="Mobile red" width="157" height="280">
-      </figure>
+      <div class="inform__blocks">
+        <ul class="inform__list">
+          <li class="inform__item merit-list">
+            <b class="merit-list__header">Поднимает настроение</b>
+            <p class="merit-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="inform__item merit-list">
+            <b class="merit-list__header">Меняет мир вокруг</b>
+            <p class="merit-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="inform__item merit-list">
+            <b class="merit-list__header">Заводит новых друзей</b>
+            <p class="merit-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <figure class="inform__image inform__image1">
+          <img src="img/iphone-screen-mobile@1x.png" alt="Mobile red" width="157" height="280">
+        </figure>
+      </div>
+      <section class="inform__promo">
+        <h2 class="visually-hidden">Эффект приложения</h2>
+        <div class="inform__promo-text">
+          <b class="inform__promo-header">Эффект на 24 часа!</b>
+          <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+
+        </div>
+        <figure class="inform__image">
+          <img src="img/timer.png" alt="Mobile red" width="238" height="276">
+        </figure>
+      </section>
     </section>
 
     <section class="review">
       <h2 class="visually-hidden">Отзывы о приложении</h2>
       <ul class="review__list comment">
-        <li class="comment__item1">
+        <li class="comment__item comment__item1">
+          <p class="comment__person">25 лет, водитель трамвая</p>
           <h3 class="comment__header">Николай Петров</h3>
           <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </li>
-        <li class="comment__item2">
+        <li class="comment__item comment__item2">
+          <p class="comment__person">25 лет, водитель трамвая</p>
           <h3 class="comment__header">Николай Петров</h3>
           <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </li>
-        <li class="comment__item3">
+        <li class="comment__item comment__item3">
+          <p class="comment__person">25 лет, водитель трамвая</p>
           <h3 class="comment__header">Николай Петров</h3>
           <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </li>
@@ -105,80 +125,86 @@
 
     <article class="price">
       <h2 class="visually-hidden">Тарифный план</h2>
-      <div class="price__column"></div>
-      <div class="price__column"></div>
-      <div class="price__column"></div>
-      <header class="price__table row">
-        <ul class="row__head-list">
-          <li class="row__head-item1">
-            <h3 class="row__header">Стандарт</h3>
-            <p class="row__header-text">3,99 USD</p>
-          </li>
-          <li class="row__head-item2">
-            <h3 class="row__header">Стандарт</h3>
-            <p class="row__header-text">3,99 USD</p>
-          </li>
-          <li class="row__head-item3">
-            <h3 class="row__header">Стандарт</h3>
-            <p class="row__header-text">3,99 USD</p>
-          </li>
-        </ul>
-      </header>
-      <section class="price__table row">
-        <ul class="row__content-list">
-          <li class="row__content-item1 row__content-item--activ">
-            <p class="row__text">Розовый фильтр</p>
-          </li>
-          <li class="row__content-item1 row__content-item--activ">
-            <p class="row__text">Смайлики</p>
-          </li>
-          <li class="row__content-item1">
-            <p class="row__text">Комментарии</p>
-          </li>
-        </ul>
-      </section>
-      <section class="price__table row">
-        <ul class="row__content-list">
-          <li class="row__content-item2 row__content-item--activ">
-            <p class="row__text">Розовый фильтр</p>
-          </li>
-          <li class="row__content-item2 row__content-item--activ">
-            <p class="row__text">Смайлики</p>
-          </li>
-          <li class="row__content-item2">
-            <p class="row__text">Комментарии</p>
-          </li>
-        </ul>
-      </section>
-      <section class="price__table row">
-        <ul class="row__content-list">
-          <li class="row__content-item3 row__content-item--activ">
-            <p class="row__text">Розовый фильтр</p>
-          </li>
-          <li class="row__content-item3 row__content-item--activ">
-            <p class="row__text">Смайлики</p>
-          </li>
-          <li class="row__content-item3">
-            <p class="row__text">Комментарии</p>
-          </li>
-        </ul>
-      </section>
+      <div class="price__wrapper">
+        <div class="price__column"></div>
+        <div class="price__column"></div>
+        <div class="price__column"></div>
+        <header class="price__table row">
+          <ul class="row__head-list">
+            <li class="row__head-item row__head-item1">
+              <h3 class="row__header"></h3>
+              <p class="row__header-text"></p>
+            </li>
+            <li class="row__head-item row__head-item1">
+              <h3 class="row__header">Стандарт</h3>
+              <p class="row__header-text">3,99 USD</p>
+            </li>
+            <li class="row__head-item row__head-item2">
+              <h3 class="row__header">Стандарт</h3>
+              <p class="row__header-text">3,99 USD</p>
+            </li>
+            <li class="row__head-item row__head-item3">
+              <h3 class="row__header">Стандарт</h3>
+              <p class="row__header-text">3,99 USD</p>
+            </li>
+          </ul>
+        </header>
+        <section class="price__table row">
+          <ul class="row__content-list">
+            <li class="row__content-item1 row__content-item--activ">
+              <p class="row__text">Розовый фильтр</p>
+            </li>
+            <li class="row__content-item1 row__content-item--activ">
+              <p class="row__text">Смайлики</p>
+            </li>
+            <li class="row__content-item1">
+              <p class="row__text">Комментарии</p>
+            </li>
+          </ul>
+        </section>
+        <section class="price__table row row__col">
+          <ul class="row__content-list">
+            <li class="row__content-item2 row__content-item--activ">
+              <p class="row__text">Розовый фильтр</p>
+            </li>
+            <li class="row__content-item2 row__content-item--activ">
+              <p class="row__text">Смайлики</p>
+            </li>
+            <li class="row__content-item2">
+              <p class="row__text">Комментарии</p>
+            </li>
+          </ul>
+        </section>
+        <section class="price__table row row__col">
+          <ul class="row__content-list">
+            <li class="row__content-item3 row__content-item--activ">
+              <p class="row__text">Розовый фильтр</p>
+            </li>
+            <li class="row__content-item3 row__content-item--activ">
+              <p class="row__text">Смайлики</p>
+            </li>
+            <li class="row__content-item3">
+              <p class="row__text">Комментарии</p>
+            </li>
+          </ul>
+        </section>
+      </div>
     </article>
 
     <section class="contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="contacts__wrapper">
-        <h3 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h3>
+        <h3 class="contacts__header">Остались вопросы?<br>Свяжитесь с нами!</h3>
         <ul class="contacts__list">
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item1">
             <p class="contacts__text">Звоните:</p>
             <a class="contacts__number" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item2">
             <p class="contacts__text">Пишите:</p>
             <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item3">
             <p class="contacts__text">Приезжайте в гости:</p>
             <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
           </li>
@@ -204,7 +230,7 @@
       </div>
     </div>
   </footer>
-
+<script src="js/script.js"></script>
 </body>
 
 </html>

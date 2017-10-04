@@ -1,8 +1,26 @@
 .slogan {
+  padding-top: 45px;
+  background-color: @white;
 
   &__text {
+    margin: 0 auto;
+    width: 230px;
+    padding-bottom: 35px;
     font-size: @font-size__slogan;
     font-weight: @font-weight__light;
+    line-height: 29px;
     color: @grayblue;
   }
+}
+
+@media (min-width: @desktop-width) {
+  .slogan {
+    margin: 0 auto;
+
+    &__text {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+
 }

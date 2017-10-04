@@ -1,13 +1,33 @@
 .intro {
+  width: 100%;
+  margin-top: -70px;
+  background-color: @darkblue;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% top;
+  background-size: auto;
+
+  &--full {
+    background-image: url("../img/iphone-hand-mobile@1x.png"),
+    url("../img/bg-back-mobile@1x.jpg");
+    background-position: left 176px, center top;
+    background-size: 258px, 700px;
+    min-height: 736px;
+  }
 
   &__wrapper {
-    width: 320px;
+    width: auto;
     min-height: 665px;
     margin: 0 auto;
     text-align: center;
-    background-color: @darkblue;
-    background-image: url("/img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
+  }
+
+  &__header {
+    display: none;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: @font-weight__light;
+    color: @white;
   }
 
   &__link {
@@ -21,19 +41,89 @@
   }
 
   &__text {
+    margin: 0;
+    padding-bottom: 35px;
     font-size: @font-size__base;
     font-weight: @font-weight__light;
+    line-height: 24px;
     color: @white;
   }
 
-  &__header {
-    height: 175px;
-    padding-top: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: @font-size__intro;
-    font-weight: @font-weight__light;
-    color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-size: cover;
+
+    &__wrapper {
+      width: 300px;
+      min-height: 500px;
+      margin: 0;
+    }
+
+    &__header {
+      display: block;
+    }
+
+    &__photo {
+      min-height: 440px;
+      text-align: center;
+    }
+
+    &__header-photo {
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 150px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    position: relative;
+    width: 100%;
+
+    margin: 0 auto;
+    margin-top: -110px;
+    padding: 0;
+    background-size: cover;
+
+    &__index {
+      min-height: 850px;
+    }
+
+
+    &__wrapper {
+      width: 940px;
+      margin: 0 auto;
+      margin-top: 200px;
+      padding: 0;
+    }
+
+    &__promo-block {
+      width: 330px;
+    }
+
+    &__photo {
+      height: 400px;
+    }
+
+    &__header-photo {
+      padding-top: 150px;
+    }
+
+
   }
 
 

@@ -10,6 +10,10 @@
     display: none;
   }
 
+  &__person {
+    display: none;
+  }
+
   &__header {
     margin: 0;
     padding-top: 50px;
@@ -25,4 +29,32 @@
     line-height: 24px;
     color: @grayblue;
   }
+}
+
+@media (min-width: @tablet-width) {
+  .comment {
+
+    &__item1 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column-reverse;
+    }
+
+    &__person {
+      display: block;
+    }
+
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment {
+
+
+    &__text {
+      width: 820px;
+      margin: 0 auto;
+    }
+  }
+
 }
