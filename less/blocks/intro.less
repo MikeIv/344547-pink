@@ -7,13 +7,14 @@
   background-position: 50% top;
   background-size: auto;
 
-  &--full {
+  &--img {
     background-image: url("../img/iphone-hand-mobile@1x.png"),
     url("../img/bg-back-mobile@1x.jpg");
-    background-position: left 176px, center top;
+    background-position: left 180px, top;
     background-size: 258px, 700px;
     min-height: 736px;
   }
+
 
   &__wrapper {
     width: auto;
@@ -22,7 +23,7 @@
     text-align: center;
   }
 
-  &__header {
+  &__header-index {
     display: none;
     font-size: 40px;
     line-height: 48px;
@@ -42,10 +43,26 @@
 
   &__text {
     margin: 0;
-    padding-bottom: 35px;
+    padding-top: 5px;
+    padding-bottom: 30px;
     font-size: @font-size__base;
     font-weight: @font-weight__light;
     line-height: 24px;
+    color: @white;
+  }
+
+  &__photo {
+    min-height: 238px;
+  }
+
+  &__header-photo {
+    width: 280px;
+    min-height: 100px;
+    margin: 0 auto;
+    padding-top: 100px;
+    font-size: @font-size__intro;
+    font-weight: @font-weight__light;
+    line-height: 29px;
     color: @white;
   }
 

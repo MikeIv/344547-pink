@@ -2,8 +2,22 @@
   width: auto;
   min-height: 470px;
   margin: 0 auto;
+  padding-top: 90px;
   text-align: center;
   background-color: @bg-lightgray;
+
+  &__wrapper {
+    margin: 0 auto;
+    display: table;
+    width: auto;
+    background-color: @white;
+    border: 2px solid @bg-lightgray;
+    box-sizing: border-box;
+  }
+
+  &__column {
+    display: table-column;
+  }
 }
 
 

@@ -4,13 +4,25 @@
   margin: 0 auto;
   text-align: center;
 
+
   &__blocks {
     padding-top: 85px;
+    padding: 58px 20px 32px 20px;
+    background-image: url(../img/bg-triangle-white.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-color: @bg-lightgray;
   }
 
   &__list {
     .list-unstile();
+  }
+
+  &__image1 {
+    position: relative;
+    z-index: 1;
+    padding-top: 12px;
   }
 
   &__promo {
@@ -77,7 +89,7 @@
       display: block;
     }
 
-     &__list {
+    &__list {
       flex-direction: row;
       justify-content: space-around;
       width: 940px;
