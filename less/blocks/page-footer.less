@@ -1,5 +1,5 @@
 .page-footer {
-  width: auto;
+  width: 100%;
   min-height: 285px;
   margin: 0 auto;
   text-align: center;
@@ -10,10 +10,34 @@
   }
 
   &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
     min-height: 125px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  &__logo {
+    padding-top: 40px;
+  }
+
+  &__developer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 40px;
+  }
+
+  &__developer-label {
+    margin-top: auto;
+    margin-right: 15px;
+    font-size: 14px;
   }
 
 }
+
 
 @media (min-width: @tablet-width) {
   .page-footer {
@@ -22,9 +46,12 @@
 
 
     &__wrapper {
-      min-height: 120px;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
+      flex-direction: row;
+      width: 660px;
+      min-height: 120px;
+      box-sizing: border-box;
     }
   }
 }

@@ -19,7 +19,6 @@
       </div>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-
           <li class="site-list__item site-list__item--activ">
             <a class="site-list__link">Главная</a>
           </li>
@@ -40,11 +39,11 @@
   <main class="page-main">
     <h1 class="visually-hidden">Пинк – приложение, которое менят мир, поднимает настроение и позволяет заводить новых друзей</h1>
 
-    <section class="intro intro__index intro--full">
+    <section class="intro intro__index intro--img">
       <h2 class="visually-hidden">Презентация приложения</h2>
       <div class="intro__wrapper">
         <div class="intro__promo-block">
-          <h3 class="intro__header">Взгляните<br>на жизнь<br>иначе!</h3>
+          <h3 class="intro__header-index">Взгляните<br>на жизнь<br>иначе!</h3>
           <p class="intro__link intro-btn">
             <a class="intro-btn__link" href="#">Скачать приложение</a>
           </p>
@@ -121,74 +120,48 @@
           <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </li>
       </ul>
+      <ul class="paginator">
+        <li class="paginator__page paginator__page--active">1</li>
+        <li class="paginator__page">2</li>
+        <li class="paginator__page">3</li>
+      </ul>
     </section>
 
     <article class="price">
       <h2 class="visually-hidden">Тарифный план</h2>
       <div class="price__wrapper">
-        <div class="price__column"></div>
-        <div class="price__column"></div>
-        <div class="price__column"></div>
-        <header class="price__table row">
-          <ul class="row__head-list">
-            <li class="row__head-item row__head-item1">
-              <h3 class="row__header"></h3>
-              <p class="row__header-text"></p>
-            </li>
-            <li class="row__head-item row__head-item1">
-              <h3 class="row__header">Стандарт</h3>
-              <p class="row__header-text">3,99 USD</p>
-            </li>
-            <li class="row__head-item row__head-item2">
-              <h3 class="row__header">Стандарт</h3>
-              <p class="row__header-text">3,99 USD</p>
-            </li>
-            <li class="row__head-item row__head-item3">
-              <h3 class="row__header">Стандарт</h3>
-              <p class="row__header-text">3,99 USD</p>
-            </li>
+        <div class="price__tabl tabl">
+          <ul class="tabl__col tabl__col--first">
+            <li class="tabl__title">Price<span class="tabl__price">USD</span></li>
+            <li class="tabl__cell">Розовый фильтр</li>
+            <li class="tabl__cell">Смайлики</li>
+            <li class="tabl__cell">Комментарии</li>
           </ul>
-        </header>
-        <section class="price__table row">
-          <ul class="row__content-list">
-            <li class="row__content-item1 row__content-item--activ">
-              <p class="row__text">Розовый фильтр</p>
-            </li>
-            <li class="row__content-item1 row__content-item--activ">
-              <p class="row__text">Смайлики</p>
-            </li>
-            <li class="row__content-item1">
-              <p class="row__text">Комментарии</p>
-            </li>
+          <ul class="tabl__col">
+            <li class="tabl__title">База<span class="tabl__price">1,99 USD</span></li>
+            <li class="tabl__cell tabl__cell--yes">Розовый фильтр</li>
+            <li class="tabl__cell tabl__cell--no">Смайлики</li>
+            <li class="tabl__cell tabl__cell--no">Комментарии</li>
           </ul>
-        </section>
-        <section class="price__table row row__col">
-          <ul class="row__content-list">
-            <li class="row__content-item2 row__content-item--activ">
-              <p class="row__text">Розовый фильтр</p>
-            </li>
-            <li class="row__content-item2 row__content-item--activ">
-              <p class="row__text">Смайлики</p>
-            </li>
-            <li class="row__content-item2">
-              <p class="row__text">Комментарии</p>
-            </li>
+          <ul class="tabl__col">
+            <li class="tabl__title tabl__title--hit">Стандарт<span class="tabl__price">3,99 USD</span></li>
+            <li class="tabl__cell tabl__cell--yes">Розовый фильтр</li>
+            <li class="tabl__cell tabl__cell--yes">Смайлики</li>
+            <li class="tabl__cell tabl__cell--no">Комментарии</li>
           </ul>
-        </section>
-        <section class="price__table row row__col">
-          <ul class="row__content-list">
-            <li class="row__content-item3 row__content-item--activ">
-              <p class="row__text">Розовый фильтр</p>
-            </li>
-            <li class="row__content-item3 row__content-item--activ">
-              <p class="row__text">Смайлики</p>
-            </li>
-            <li class="row__content-item3">
-              <p class="row__text">Комментарии</p>
-            </li>
+          <ul class="tabl__col">
+            <li class="tabl__title">Анлим<span class="tabl__price">9,99 USD</span></li>
+            <li class="tabl__cell tabl__cell--yes">Розовый фильтр</li>
+            <li class="tabl__cell tabl__cell--yes">Смайлики</li>
+            <li class="tabl__cell tabl__cell--yes">Комментарии</li>
           </ul>
-        </section>
+        </div>
       </div>
+      <ul class="paginator paginator__price">
+        <li class="paginator__page">1</li>
+        <li class="paginator__page paginator__page--active">2</li>
+        <li class="paginator__page">3</li>
+      </ul>
     </article>
 
     <section class="contacts">
@@ -209,9 +182,12 @@
             <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
+        <svg class="contacts__arrow" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
+        <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
+        </svg>
       </div>
-      <div class="contacts__map">
-        <div class="contacts__google-map" id="google-map"></div>
+      <div class="contacts__map-wrapper">
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5885774597286!2d30.32503594628604!3d59.93896884748452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2suk!4v1494486277581" style="border:0"></iframe>
       </div>
     </section>
   </main>
@@ -230,7 +206,7 @@
       </div>
     </div>
   </footer>
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
