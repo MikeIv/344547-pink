@@ -9,17 +9,22 @@
     justify-content: center;
     flex-direction: column;
     .list-unstile();
+
   }
 
   &__item {
-    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
     margin-bottom: 20px;
     text-align: left;
   }
 
   &__post {
-    width: 90%;
-    padding: 12px 18px;
+    max-width: 280px;
+    padding-top: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 18px;
     margin: 0 auto;
     background-color: @bg-lightgray;
     box-sizing: border-box;
@@ -37,15 +42,19 @@
     line-height: 30px;
   }
 
-  &__text {
-    margin: 0;
-    line-height: 24px;
-  }
-
   &__name {
+    margin: 0;
+    padding: 0;
     font-size: @font-size__base;
     font-weight: @font-weight__header;
+    line-height: 22px;
     color: @grayblue;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
   }
 
   &__name span {
@@ -60,17 +69,25 @@
     position: relative;
     padding-left: 30px;
     font-size: @font-size__like;
-    font-weight: @font-weight__light;
+    font-weight: @font-weight__regular;
     text-transform: uppercase;
     color: @red;
-    background: url(../img/icon-heart.svg) no-repeat left;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 13px;
+      height: 12px;
+      background: url(../img/icon-heart.svg) no-repeat left;
+    }
   }
 }
 
 .photo__image {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   width: 100%;
   min-height: 137px;
   margin: 0 auto;
@@ -78,24 +95,23 @@
 
   img {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     min-height: 137px;
   }
 }
 
 .photo__image--full {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   position: relative;
   width: 100%;
   min-height: 137px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   text-decoration: none;
 
   img {
-    width: 100%;
+    width: 320px;
     min-height: 137px;
   }
 
@@ -137,10 +153,10 @@
     }
 
     &__item {
-    width: 300px;
-    margin-bottom: 20px;
-    text-align: left;
-  }
+      width: 300px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
 
     &__item--full {
       width: 100%;

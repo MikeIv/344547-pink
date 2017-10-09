@@ -1,6 +1,11 @@
 .tabl {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: table;
   width: 100%;
+  height: 100%;
   border-collapse: collapse;
 }
 
@@ -20,19 +25,21 @@
 
 .tabl__title {
   display: block;
-  background-color: @grayblue;
-  color: #fff;
+  padding-top: 18px;
   text-align: center;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 18px;
+  color: @white;
+  background-color: @grayblue;
+
+
 
   &--hit {
+    position: relative;
     background-image: url(../img/bg-hit.svg);
     background-repeat: no-repeat;
-    position: relative;
   }
 
   &--hit::after {
@@ -40,8 +47,8 @@
     position: absolute;
     top: 12px;
     left: 8px;
-    color: @white;
     font-size: 14px;
+    color: @white;
     transform: rotate(-45deg);
   }
 }
@@ -69,10 +76,10 @@
   white-space: nowrap;
   border-bottom: 2px solid #e5e5e5;
 
-  &--yes {
+  &--check {
     background: url(../img/icon-yes.svg) no-repeat;
     background-position: 93%;
-    background-size: 22px 16px;
+    background-size: 31px 21px;
   }
 
   &--no {
@@ -83,7 +90,6 @@
 }
 
 //-----------------TABLET-----------------------
-
 @media (min-width: @tablet-width) {
   .tabl {
     max-width: 620px;
@@ -153,7 +159,6 @@
 }
 
 //-----------------DESKTOP----------------------
-
 @media (min-width: @desktop-width) {
   .tabl {
     max-width: 940px;

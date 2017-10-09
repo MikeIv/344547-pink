@@ -1,23 +1,51 @@
 .tool {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  max-width: 225px;
-  max-height: 50px;
+  width: 280px;
+  min-height: 50px;
   margin: 0 auto;
   margin-top: 40px;
 
   &__edit {
-    padding-left: 15px;
-    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 18px;
+    margin-right: 18px;
     font-size: 0;
     border: 0;
     background-color: @bg-lightgray;
   }
 
-  &__edit svg {
-    fill: #b5b9be;
+  &__crop {
+    width: 50px;
+    height: 50px;
+
+    svg {
+      width: 100%;
+      fill: #b5b9be;
+    }
+
+    &--activ {
+      svg {
+        fill: @red;
+      }
+    }
+  }
+
+  &__contrast {
+    width: 50px;
+    height: 50px;
+
+    svg {
+      width: 32px;
+      height: 32px;
+      fill: #b5b9be;
+    }
+
   }
 
 

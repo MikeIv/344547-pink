@@ -10,11 +10,20 @@
     border: 2px solid @white;
     border-radius: 30px;
   }
+
+  &__link:hover {
+    color: @red;
+    background-color: @white;
+  }
+
+  &__link:active {
+    color: fade(@red, 30%);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .intro-btn {
-  margin-bottom: 40px;
-  padding-top: 15px;
-}
+    margin-bottom: 40px;
+    padding-top: 15px;
+  }
 }
