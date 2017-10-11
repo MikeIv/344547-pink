@@ -36,15 +36,34 @@
 
 @media (min-width: @tablet-width) {
   .comment {
+    width: 620px;
+    margin: 0 auto;
 
     &__item1 {
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       flex-direction: column-reverse;
+      min-height: 255px;
     }
 
     &__person {
       display: block;
+      margin-top: 0;
+      font-size: 14px;
+      line-height: 30px;
+    }
+
+    &__header {
+      margin-bottom: 0;
+      padding-top: 40px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__text {
+      width: 620px;
+      font-size: 18px;
+      line-height: 30px;
     }
 
   }
