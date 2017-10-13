@@ -94,19 +94,34 @@
     </section>
 
     <article class="photo">
-      <h3 class="photo__header">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</h3>
+      <h3 class="photo__header">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h3>
+
+      <div class="photo__item--full">
+        <a class="photo__image photo__image--full" href="#">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото">
+          </picture>
+        </a>
+      </div>
 
       <ul class="photo__list">
         <li class="photo__item photo__item--full">
-          <a class="photo__image photo__image--full" href="#"><img src="img/panorama-mobile@1x.jpg" alt="Фотография 1"></a>
-          <div class="photo__post">
+          <div class="photo__post photo__post--full">
             <b class="photo__name">Анна <span>(5 минут назад)</span></b>
-            <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <b class="photo__like">Нравится: 215</b>
+            <p class="photo__text photo__text--full">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <b class="photo__like photo__like--full">Нравится: 215</b>
           </div>
         </li>
         <li class="photo__item photo__item-desk">
-          <a class="photo__image" href="#"><img src="img/photo-car-mobile@1x.jpg" alt="Фотография 2" width="280" height="180"></a>
+          <a class="photo__image" href="#">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img src="img/photo-car-mobile@1x.jpg" alt="Фотография 3" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180">
+            </picture>
+          </a>
           <div class="photo__post">
             <b class="photo__name">Левон<span>(5 часов назад)</span></b>
             <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -114,7 +129,13 @@
           </div>
         </li>
         <li class="photo__item photo__item-desk">
-          <a class="photo__image" href="#"><img src="img/photo-drumset-mobile@1x.jpg" alt="Фотография 3" width="280" height="180"></a>
+          <a class="photo__image" href="#">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img src="img/photo-drumset-mobile@1x.jpg" alt="Фотография 3" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180">
+            </picture>
+          </a>
           <div class="photo__post">
             <b class="photo__name">Антон<span>(12 часов назад)</span></b>
             <p class="photo__text">Соседи будут рады!</p>
@@ -122,7 +143,13 @@
           </div>
         </li>
         <li class="photo__item photo__item-desk">
-          <a class="photo__image" href="#"><img src="img/photo-window-mobile@1x.jpg" alt="Фотография 4" width="280" height="180"></a>
+          <a class="photo__image" href="#">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg.jpg 2x">
+              <img src="img/photo-window-mobile@1x.jpg" alt="Фотография 3" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180">
+            </picture>
+          </a>
           <div class="photo__post">
             <b class="photo__name">Борис<span>(20 часов назад)</span></b>
             <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -130,7 +157,13 @@
           </div>
         </li>
         <li class="photo__item photo__item-desk">
-          <a class="photo__image" href="#"><img src="img/photo-fair-mobile@1x.jpg" alt="Фотография 5" width="280" height="180"></a>
+          <a class="photo__image" href="#">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img src="img/photo-fair-mobile@1x.jpg" alt="Фотография 3" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180">
+            </picture>
+          </a>
           <div class="photo__post">
             <b class="photo__name">Сергей<span>(25 часов назад)</span></b>
             <p class="photo__text">Самая кубанская в мире!</p>
@@ -138,7 +171,13 @@
           </div>
         </li>
         <li class="photo__item photo__item-desk">
-          <a class="photo__image" href="#"><img src="img/photo-pov-mobile@1x.jpg" alt="Фотография 6" width="280" height="180"></a>
+          <a class="photo__image" href="#">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img src="img/photo-pov-mobile@1x.jpg" alt="Фотография 3" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180">
+            </picture>
+          </a>
           <div class="photo__post">
             <b class="photo__name">Максим<span>(40 часов назад)</span></b>
             <p class="photo__text">Где снег-то?</p>
@@ -146,7 +185,13 @@
           </div>
         </li>
         <li class="photo__item photo__item-desk">
-          <a class="photo__image" href="#"><img src="img/photo-wing-mobile@1x.jpg" alt="Фотография 7" width="280" height="180"></a>
+          <a class="photo__image" href="#">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img src="img/photo-wing-mobile@1x.jpg" alt="Фотография 3" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180">
+            </picture>
+          </a>
           <div class="photo__post">
             <b class="photo__name">Надежда<span>(45 часов назад)</span></b>
             <p class="photo__text">Всем GM и взаимные лайки!</p>
@@ -157,42 +202,53 @@
     </article>
 
     <section class="upload">
-      <h3 class="upload__text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h3>
+      <p class="upload__text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       <div class="upload__wrap">
-        <figure class="upload__image">
-          <img src="img/photo-road-mobile@1x.jpg" alt="Фотография 8">
-        </figure>
-        <form class="upload__form" action="https://echo.htmlacademy.ru/" method="post">
-          <ul class="upload__list">
-            <li class="upload__item tool">
-              <button class="tool__edit tool__crop tool__crop--activ">Обрезать<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+        <div class="upload__center">
+          <div class="upload__img">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img src="img/photo-7-mobile@1x.jpg" srcset="img/photo-road-mobile@1x.jpg 1x, img/photo-road-mobile@2x.jpg 2x" alt="Uploaded image">
+            </picture>
+          </div>
+          <form class="modify" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modify__wrap">
+              <div class="modify__tools">
+                <button class="modify__btn modify__btn--crop"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
               <path fill="none" d="M0,0h48v48H0V0z"/>
               <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
               </svg></button>
-              <button class="tool__edit tool__fill tool__fill--activ">Заливка<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                <button class="modify__btn modify__btn--fill"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
               <path fill="none" d="M0,0h48v48H0V0z"/>
               <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
               <rect y="40" width="48" height="3"/>
               </svg></button>
-              <button class="tool__edit tool__contrast tool__contrast--activ">Контраст<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 31.9 31.9" style="enable-background:new 0 0 31.9 31.9;" xml:space="preserve">
-<path d="M16,4c6.6,0,12,5.4,12,12s-5.4,12-12,12S4,22.6,4,16S9.4,4,16,4 M16,0C7.1,0,0,7.1,0,16c0,8.8,7.1,16,16,16s16-7.1,16-16
-	C31.9,7.1,24.8,0,16,0L16,0z"/>
-<path d="M16,24.3c4.7,0,8.5-3.8,8.5-8.5c0-4.7-3.8-8.5-8.5-8.5"/>
-</svg></button>
-            </li>
-            <li class="upload__item tool-control">
-              <div class="tool-control__scale">
-                <div class="tool-control__bar"></div>
+                <button class="modify__btn modify__btn--contrast"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 31.9 31.9" style="enable-background:new 0 0 31.9 31.9;" xml:space="preserve"><path d="M16,4c6.6,0,12,5.4,12,12s-5.4,12-12,12S4,22.6,4,16S9.4,4,16,4 M16,0C7.1,0,0,7.1,0,16c0,8.8,7.1,16,16,16s16-7.1,16-16
+                C31.9,7.1,24.8,0,16,0L16,0z"/><path d="M16,24.3c4.7,0,8.5-3.8,8.5-8.5c0-4.7-3.8-8.5-8.5-8.5"/></svg></button>
               </div>
-              <div class="tool-control__toggle"></div>
-            </li>
-          </ul>
-          <div class="upload__buttons">
-            <button class="upload__submit" type="submit">Запостить</button>
-            <button class="upload__reset" type="reset">Отмена</button>
-          </div>
-        </form>
+              <div class="modify__group">
+                <div class="slider modify__slider">
+                  <div class="slider__bar modify__bar"></div>
+                  <div class="slider__pull modify__pull"></div>
+                </div>
+                <div class="slider modify__slider">
+                  <div class="slider__bar modify__bar"></div>
+                  <div class="slider__pull modify__pull"></div>
+                </div>
+                <div class="slider modify__slider">
+                  <div class="slider__bar modify__bar"></div>
+                  <div class="slider__pull modify__pull"></div>
+                </div>
+              </div>
+            </div>
+            <div class="modify__buttons">
+              <button class="modify__submit" type="submit">Запостить</button>
+              <button class="modify__reset" type="reset">Отмена</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </main>

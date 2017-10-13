@@ -7,20 +7,20 @@
   margin: 0 auto;
   padding-top: 90px;
   background-color: @bg-lightgray;
-}
 
-.price__wrapper {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  min-height: 200px;
-  padding-top: 90px;
-  padding-bottom: 20px;
-  overflow-x: hidden;
-  background-image: url(../../img/bg-triangle-white.svg);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 200px;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    overflow-x: hidden;
+    background-image: url(../../img/bg-triangle-white.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+  }
 }
 
 
@@ -29,6 +29,11 @@
     justify-content: flex-start;
     min-height: 375px;
     padding: 0;
+
+    &__wrapper {
+      min-height: 270px;
+      padding-bottom: 15px;
+    }
   }
 
 }
