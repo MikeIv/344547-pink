@@ -33,3 +33,37 @@
   }
 
 }
+
+
+@media (min-width: @desktop-width) {
+
+  .merit-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+
+
+    &--middl {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+
+    &__header {
+      width: 225px;
+      height: auto;
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    &__text {
+      width: 230px;
+      padding-top: 25px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+}

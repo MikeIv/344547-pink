@@ -25,6 +25,12 @@
     padding-top: 12px;
   }
 
+  &__iphone2,
+  &__iphone3,
+  &__iphone4 {
+    display: none;
+  }
+
   &__promo {
     display: none;
   }
@@ -128,11 +134,10 @@
     }
 
     &__timer {
-      width: 200px;
+      width: 300px;
       margin: 0;
       margin-right: 30px;
       padding-top: 20px;
-      width: 300px;
 
       img {
         width: 238px;
@@ -151,16 +156,20 @@
 
   }
 
+  .inform__promo-header--desk {
+    display: none;
+  }
+
 }
 
 
 @media (min-width: @desktop-width) {
   .inform {
-    width: 960px;
-    padding: 0 10px;
+    width: auto;
 
     &__title {
-      width: 820px;
+      width: 920px;
+      min-height: 320px;
     }
 
     &__image1 {
@@ -168,13 +177,15 @@
     }
 
     &__blocks {
-      display: block;
+      width: auto;
+      min-height: 640px;
     }
 
     &__list {
       flex-direction: row;
       justify-content: space-around;
       width: 940px;
+      min-height: 260px;
       text-align: center;
     }
 
@@ -184,7 +195,9 @@
     }
 
     &__promo {
-      width: 940px;
+      width: auto;
+      min-height: 425px;
+      background-color: @bg-lightgray;
     }
 
     &__promo-text {
@@ -192,7 +205,84 @@
       padding-top: 100px;
     }
 
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    &__iphone-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      order: -1;
+      width: 940px;
+    }
+
+    &__iphone1 {
+      display: none;
+    }
+
+    &__iphone2,
+    &__iphone3,
+    &__iphone4 {
+      display: flex;
+      width: 290px;
+      height: 300px;
+
+      img {
+        width: 350px;
+      }
+    }
+
   }
 
+  .inform__promo-wrapper {
+    width: 940px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .inform__timer {
+    width: 305px;
+    margin: 0;
+    margin-right: 60px;
+    padding-top: 15px;
+
+    img {
+      width: 298px;
+      padding-right: 0px;
+    }
+  }
+
+  .inform__promo-header {
+    display: none;
+  }
+
+  .inform__promo-header--desk {
+    display: block;
+    width: 510px;
+    margin-bottom: 0;
+    padding-top: 77px;
+    padding-right: 100px;
+    font-size: 30px;
+    font-weight: @font-weight__header;
+    line-height: 30px;
+  }
+
+  .inform__promo-text {
+    width: 550px;
+    margin-bottom: 0;
+    padding-top: 8px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .inform__promo-list a {
+    width: 400px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 
 }

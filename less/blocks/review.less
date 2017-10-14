@@ -16,6 +16,14 @@
 
 }
 
+.review__quots {
+  display: none;
+}
+
+.review__slider {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .review {
     min-height: 255px;
@@ -31,9 +39,53 @@
 
 @media (min-width: @desktop-width) {
   .review {
-    width: 940px;
+    position: relative;
+    width: auto;
+    margin: 0 auto;
 
+    &__wrapper {
+      width: 940px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
 
+  }
+
+  .review__quots {
+    display: block;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+
+  .review__slider {
+    display: block;
+    position: absolute;
+    top: 45%;
+    width: 22px;
+    height: 42px;
+    cursor: pointer;
+    transform: translateY(23px);
+
+    &--back {
+      left: 130px;
+    }
+
+    &--forward {
+      right: 130px;
+    }
+
+    &:hover .review__color {
+      opacity: 0.6;
+    }
+
+    &:active .review__color {
+      opacity: 0.1;
+    }
+  }
+
+  .review__color {
+    fill: @grayblue;
+    opacity: 0.3;
   }
 
 }
