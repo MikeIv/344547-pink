@@ -1,7 +1,7 @@
 .modify {
   background-color: @bg-lightgray;
   padding-bottom: 40px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .modify__tools {
@@ -33,24 +33,30 @@
 
   &--crop {
     margin-right: 33px;
-  }
 
-  &--crop .modify__color {
-    fill: @red;
+    svg {
+      fill: @red;
+    }
   }
 
   &--fill {
     margin-right: 37px;
+
+    svg {
+      fill: #b5b9be;
+    }
   }
 
   &--contrast {
-    padding-top: 10px;
+    padding-top: 5px;
+
+    svg {
+      width: 32px;
+      height: 32px;
+      fill: #b5b9be;
+    }
   }
 
-  &--contrast svg {
-    width: 32px;
-    height: 32px;
-  }
 
   &--fill .modify__color,
   &--contrast .modify__color {
@@ -105,8 +111,8 @@
 .modify__buttons {
   width: 280px;
   margin: auto;
-  padding-top: 65px;
-  padding-bottom: 45px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .modify__submit,
@@ -164,7 +170,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin-right: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 60px;
     padding-top: 15px;
 
   }
@@ -265,6 +271,7 @@
   }
 
   .modify__buttons {
+    margin-top: 65px;
     padding-left: 10px;
   }
 
@@ -291,12 +298,15 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    width: 410px;
+    margin-top: 140px;
+    margin-bottom: auto;
     padding: 0;
   }
 
   .modify__wrap {
-    width: 410px;
     justify-content: space-between;
+    width: 410px;
     padding: 0;
   }
 
@@ -307,6 +317,7 @@
     svg {
       width: 48px;
       height: 48px;
+      fill: @red;
     }
   }
 
@@ -347,5 +358,12 @@
     &:nth-child(3) .modify__pull {
       left: 56%;
     }
+  }
+
+  .modify__submit,
+  .modify__reset {
+    width: 183px;
+    height: 55px;
+    padding: 15px 30px;
   }
 }

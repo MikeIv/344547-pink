@@ -56,7 +56,8 @@
     min-height: 238px;
   }
 
-  &__header-photo {
+  &__header-photo,
+  &__header-form {
     width: 280px;
     min-height: 100px;
     margin: 0 auto;
@@ -121,15 +122,14 @@
       text-align: center;
     }
 
-    &__header-photo {
+    &__header-photo,
+    &__header-form {
       width: 550px;
       margin: 0 auto;
       padding-top: 160px;
       font-size: 50px;
       line-height: 60px;
     }
-
-
 
   }
 
@@ -142,7 +142,9 @@
     margin: 0 auto;
     margin-top: -310px;
     padding: 0;
-    background-size: cover;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: auto;
+    background-position: center 2%;
 
     &__index {
       min-height: 850px;
@@ -169,11 +171,22 @@
     }
 
     &__photo {
-      height: 400px;
+      min-height: 395px;
+      margin-top: -110px;
     }
 
     &__header-photo {
-      padding-top: 150px;
+      padding-top: 172px;
+    }
+
+    &__header-form {
+      width: 820px;
+      margin: 0 auto;
+      padding-top: 170px;
+      font-size: 50px;
+      line-height: 60px;
+      font-weight: @font-weight__light;
+      color: @white;
     }
 
     &__header-index {

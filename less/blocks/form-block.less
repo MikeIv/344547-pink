@@ -2,7 +2,8 @@
   width: auto;
   margin: 0 auto;
 
-  &__header {
+  &__header,
+  &__header-form {
     max-width: 280px;
     margin: 0 auto;
     padding-top: 40px;
@@ -12,6 +13,10 @@
     font-weight: @font-weight__regular;
     line-height: 30px;
     color: @grayblue;
+  }
+
+  &__header-form {
+    display: none;
   }
 
   &__wrapper {
@@ -39,6 +44,16 @@
 
 @media (min-width: @desktop-width) {
   .form-block__header {
-    max-width: 820px;
+    display: none;
+  }
+
+  .form-block__header-form {
+    display: block;
+    max-width: 770px;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 35px;
+    box-sizing: border-box;
+    font-size: 18px;
   }
 }
