@@ -18,9 +18,11 @@
   }
 
   &__header {
-    padding-top: 28px;
+    padding-top: 15px;
+    padding-bottom: 10px;
     font-size: @font-size__contheader;
     font-weight: @font-weight__light;
+    line-height: 29px;
     color: @grayblue;
   }
 
@@ -52,12 +54,12 @@
 
   &__map-wrapper {
     width: 100%;
-    min-height: 200px;
+    min-height: 190px;
   }
 
   &__map {
     width: 100%;
-    min-height: 200px;
+    min-height: 210px;
   }
 
 }
@@ -65,29 +67,64 @@
 @media (min-width: @tablet-width) {
   .contacts {
 
-
     &__wrapper {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      width: 600px;
+      width: 660px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
       box-sizing: border-box;
     }
 
     &__header {
-      width: 90%;
+      width: 600px;
+      margin-bottom: 16px;
+      padding-top: 8px;
+      font-size: 40px;
+      line-height: 48px;
     }
 
     &__list {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      max-width: 660px;
+      width: 620px;
+      min-height: 210px;
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
     }
 
     &__item {
-      width: 40%;
+      width: 300px;
+      box-sizing: border-box;
+    }
+
+    &__item1 {
+      padding-right: 20px;
+    }
+
+    &__item2 {
+      padding-left: 20px;
+    }
+
+    &__item3 {
+      width: 250px;
+      margin-top: 25px;
+    }
+
+    &__text {
+      margin-bottom: 4px;
+    }
+
+    &__map-wrapper {
+      min-height: 370px;
+    }
+
+    &__map {
+      min-height: 370px;
     }
 
   }
@@ -98,15 +135,26 @@
   .contacts {
 
 
+
     &__wrapper {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       width: 940px;
+      margin: 0 auto;
+      padding-bottom: 0;
+
+      svg {
+        width: 1200px;
+        top: 63%;
+        left: -120px;
+        ;
+
+      }
     }
 
     &__header {
-      width: 90%;
+      padding-top: 10px;
       font-size: 50px;
       line-height: 60px;
     }
@@ -116,6 +164,8 @@
       justify-content: space-around;
       flex-wrap: nowrap;
       width: 940px;
+      min-height: 110px;
+      padding-top: 15px;
     }
 
     &__item {
@@ -124,10 +174,27 @@
 
     &__item3 {
       order: -1;
+      margin: 0;
     }
 
     &__item1 {
       order: -2;
+      padding-right: 35px;
+    }
+    &__item2 {
+      padding-left: 35px;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+    }
+
+    &__map-wrapper {
+      min-height: 520px;
+    }
+
+    &__map {
+      min-height: 520px;
     }
 
   }

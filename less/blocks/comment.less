@@ -36,15 +36,40 @@
 
 @media (min-width: @tablet-width) {
   .comment {
+    width: 660px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
 
     &__item1 {
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       flex-direction: column-reverse;
+      min-height: 255px;
     }
 
     &__person {
       display: block;
+      margin-top: 0;
+      font-size: 14px;
+      line-height: 30px;
+    }
+
+    &__header {
+      margin-bottom: 0;
+      padding-top: 33px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__text {
+      width: 620px;
+      margin: 0 auto;
+      padding: 0;
+      padding-top: 20px;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
     }
 
   }
@@ -52,11 +77,27 @@
 
 @media (min-width: @desktop-width) {
   .comment {
+    width: 940px;
+    margin: 0 auto;
 
 
     &__text {
-      width: 820px;
+      width: 730px;
       margin: 0 auto;
+      padding-top: 50px;
+
+      span {
+        display: none;
+      }
+    }
+
+    &__header {
+      font-size: 24px;
+    }
+
+    &__person {
+      margin-bottom: 43px;
+      font-size: 18px;
     }
   }
 

@@ -13,13 +13,45 @@
   }
 }
 
+
+@media (min-width: @tablet-width) {
+  .slogan {
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+
+
+    &__text {
+      width: 620px;
+      padding-top: 12px;
+      padding-bottom: 0px;
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    &__text-resize {
+      width: 500px;
+      padding-top: 5px;
+    }
+  }
+}
+
 @media (min-width: @desktop-width) {
   .slogan {
+    width: 920px;
     margin: 0 auto;
 
     &__text {
+      width: 800px;
+      padding-top: 25px;
       font-size: 50px;
       line-height: 60px;
+    }
+
+    &__text-resize {
+      width: 500px;
+      padding-top: 0;
     }
   }
 

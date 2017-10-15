@@ -4,68 +4,97 @@
   min-height: 70px;
   margin: 0 auto;
   padding: 0;
+  z-index: 2;
+  background-color: fade(@black, 30%);
 
   &__list {
     min-height: 70px;
   }
 
-  &__logo {
+  &__logo-wrapper {
     min-height: 70px;
     border-top: none;
     text-align: left;
-
-  }
-
-  &__link-logo img {
-    margin-top: 25px;
-    margin-left: 20px;
-
   }
 
   &__toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
 
-  display: block;
-  width: 70px;
-  height: 50px;
+    display: block;
+    width: 70px;
+    height: 50px;
 
-  background-color: transparent;
-
-  cursor: pointer;
-  border: none;
-
-  &:hover,
-  &:active {
     background-color: transparent;
+
+    cursor: pointer;
+    border: none;
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+    }
+
+    &__wrapper {
+      min-height: 80px;
+    }
+
+  }
+}
+
+.main-nav__logo {
+  width: 75px;
+  height: 22px;
+
+  &--mobile {
+    padding-top: 20px;
+    padding-left: 20px;
   }
 
-  &__wrapper {
-    min-height: 80px;
+  &--tablet {
+    display: none;
   }
 
+  &--desktop {
+    display: none;
+  }
+
+  &:hover .main-nav__logo-color {
+    fill: @red;
+  }
+
+  &:active .main-nav__logo-color {
+    fill: @white;
+    opacity: 0.3;
   }
 }
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
-
   position: absolute;
   top: 30px;
   left: 0px;
-
   width: 50px;
   height: 2px;
+  background-color: @white;
+  box-shadow: 0 8px 0 0 @white, 0 16px 0 0 @white;
+}
 
-  background-color: #ffffff;
-  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: @red;
+  box-shadow: 0 8px 0 0 @red, 0 16px 0 0 @red;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+  background-color: fade(@white, 30%);
+  box-shadow: 0 8px 0 0 fade(@white, 30%), 0 16px 0 0 fade(@white, 30%);
+}
+
+.main-nav--opened {
+  background-color: @grayblue;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -75,15 +104,12 @@
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     top: 20px;
     left: 24px;
-
     width: 28px;
     height: 4px;
-
-    background-color: #ffffff;
+    background-color: @white;
   }
 
   &::before {
@@ -95,9 +121,14 @@
     transform: rotate(-45deg);
   }
 
+  &:hover::before,
+  &:hover::after {
+    background-color: @red;
+  }
+
   &:active::before,
   &:active::after {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: fade(@white, 30%);
   }
 
 }
@@ -121,14 +152,58 @@
 
 }
 
+@media (max-width: @tablet-width-only) {
+
+  .main-nav--closed .site-list {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .main-nav--closed .site-list__item--active a {
+    padding-right: 70px;
+    padding-left: 70px;
+
+    text-align: center;
+  }
+
+}
+
 
 @media (min-width: @tablet-width) {
   .main-nav {
-    width: 560px;
-    box-sizing: border-box;
+    width: auto;
 
-    &__wrapper {
-      min-height: 70px;
+    &__logo-wrapper {
+      min-height: 110px;
+    }
+
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    top: 35px;
+  }
+
+  .main-nav--closed .main-nav__toggle::before {
+    top: 45px;
+  }
+
+  .main-nav__logo {
+
+    &--mobile {
+      display: none;
+
+    }
+
+    &--tablet {
+      display: block;
+      width: 147px;
+      height: 40px;
+
+      padding-top: 25px;
+      padding-left: 20px;
     }
 
   }
@@ -144,7 +219,7 @@
     min-height: 110px;
 
     &__wrapper {
-      width: 70%;
+      width: 640px;
       min-height: 110px;
     }
 
@@ -174,6 +249,39 @@
       }
     }
 
+  }
 
+  .main-nav__logo {
+    width: 75px;
+    height: 22px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+      width: 147px;
+      height: 40px;
+      padding-top: 30px;
+      padding-left: 10px;
+    }
+
+    &:hover .main-nav__logo-color {
+      fill: @red;
+    }
+
+    &:active .main-nav__logo-color {
+      fill: @white;
+      opacity: 0.3;
+    }
+  }
+
+  .main-nav--opened {
+    background-color: transparent;
   }
 }

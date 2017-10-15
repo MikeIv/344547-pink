@@ -169,17 +169,19 @@
 
 
 .form__option {
-  margin-bottom: 52px;
+  margin-bottom: 51px;
   text-align: left;
 }
 
-.form__radio {
-  margin-bottom: 45px;
-  text-align: left;
-}
+
 
 .form__wrap-check:last-child .form__option:last-child {
   margin-bottom: 45px;
+}
+
+.form__radio {
+  margin-bottom: 43px;
+  text-align: left;
 }
 
 .form__label {
@@ -246,6 +248,7 @@ input[type="radio"] {
 
 
 @media (min-width: @tablet-width) {
+
   .form {
     textarea {
       min-height: 195px;
@@ -325,6 +328,10 @@ input[type="radio"] {
     }
   }
 
+  .form__option {
+    margin-bottom: 50px;
+  }
+
   .form__end {
     order: 6;
     display: flex;
@@ -347,7 +354,7 @@ input[type="radio"] {
   }
 
   .form__radio {
-    margin-bottom: 45px;
+    margin-bottom: 43px;
 
     &:last-child {
       margin-bottom: 61px;
@@ -409,12 +416,14 @@ input[type="radio"] {
       position: absolute;
       top: 2px;
       right: 2px;
-      background: #e5e5e5;
-      background-image: url(../img/icon-mail.svg);
-      background-repeat: no-repeat;
-      background-position: center;
       width: 58px;
       height: 58px;
+      background: #e5e5e5;
+      background-image: url(../img/icon-phone.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 20px 20px;
+
     }
 
     .form__field:last-child::after {
@@ -422,12 +431,14 @@ input[type="radio"] {
       position: absolute;
       top: 2px;
       right: 2px;
-      background: #e5e5e5;
-      background-image: url(../img/icon-phone.svg);
-      background-repeat: no-repeat;
-      background-position: center;
       width: 58px;
       height: 58px;
+      background: #e5e5e5;
+      background-image: url(../img/icon-mail.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 20px 20px;
+
     }
   }
 
@@ -445,11 +456,14 @@ input[type="radio"] {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 940px;
+    margin: auto;
+    margin-bottom: 10px;
     padding-top: 43px;
     padding-left: 10px;
     padding-right: 10px;
-    max-width: 940px;
-    margin: auto;
+
+
     background-color: #fff;
   }
 
