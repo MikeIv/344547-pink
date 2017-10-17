@@ -15,9 +15,9 @@
     margin-left: 20px;
     font-size: 14px;
     line-height: 30px;
-    color: @red;
     text-align: left;
     text-transform: uppercase;
+    color: @red;
   }
 
 
@@ -28,11 +28,11 @@
     padding: 20px;
     padding-top: 15px;
     padding-left: 15px;
+    font-size: 18px;
+    line-height: 30px;
     box-sizing: border-box;
     border-width: 2px;
     border-color: #e5e5e5;
-    font-size: 18px;
-    line-height: 30px;
   }
 }
 
@@ -67,15 +67,16 @@
 
 
 .form__input {
+  width: auto;
+  margin-bottom: 18px;
+  padding: 14px 20px;
+  padding-right: 0;
   font-size: 18px;
   line-height: 30px;
   color: @grayblue;
   font-family: "Open Sans", "Arial", sans-serif;
-  padding: 14px 20px;
-  padding-right: 0;
   border: 2px solid #e5e5e5;
-  margin-bottom: 18px;
-  width: auto;
+
 
   &:hover {
     border-color: @grayblue;
@@ -93,15 +94,16 @@
 
 .form__title {
   display: block;
-  font-size: 14px;
-  line-height: 18px;
-  color: @red;
-  text-transform: uppercase;
-  font-weight: 400;
   margin: 37px auto;
   margin-bottom: 45px;
-  text-align: center;
   padding: 0 25px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @red;
+
 
   &--hidden {
     display: none;
@@ -115,20 +117,21 @@
 
 .form__send {
   display: block;
+  max-width: 305px;
+  margin: auto;
+  margin-bottom: 35px;
+  padding: 17px 48px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #fff;
   background-color: #2aab6d;
-  padding: 17px 48px;
   outline: none;
   border: none;
-  text-transform: uppercase;
   border-radius: 5px;
   cursor: pointer;
-  margin: auto;
-  margin-bottom: 35px;
-  max-width: 305px;
+
 
   &:hover {
     background-color: #1c9b5e;
@@ -154,9 +157,10 @@
   text-align: center;
   font-size: 14px;
   line-height: 30px;
-  color: #000;
   font-weight: 400;
   text-transform: uppercase;
+  color: #000;
+
 
   &--hidden {
     display: none;
@@ -283,10 +287,11 @@ input[type="radio"] {
   }
 
   .form__person {
-    padding-top: 40px;
-    border: 2px solid #e5e5e5;
     margin: 20px;
     margin-top: 15px;
+    padding-top: 40px;
+    border: 2px solid #e5e5e5;
+
 
     &--gray {
       background-color: #fff;
@@ -299,10 +304,10 @@ input[type="radio"] {
     }
 
     &:nth-child(4) {
-      order: 2;
+      margin-bottom: 56px;
       padding-left: 60px;
       padding-top: 0;
-      margin-bottom: 56px;
+      order: 2;
     }
 
     &:nth-child(3) {
@@ -312,19 +317,20 @@ input[type="radio"] {
 
     &:nth-child(2) {
       order: 4;
+      margin-bottom: 32px;
       padding-left: 60px;
       padding-top: 0;
       padding-bottom: 5px;
-      margin-bottom: 32px;
+
     }
 
     &:nth-child(5) {
       order: 5;
+      margin-top: 35px;
+      margin-bottom: 47px;
       padding-left: 60px;
       padding-right: 60px;
       padding-top: 20px;
-      margin-top: 35px;
-      margin-bottom: 47px;
     }
   }
 
@@ -337,8 +343,8 @@ input[type="radio"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     margin-bottom: 30px;
+    padding: 20px;
   }
 
   .form__field .form__name {
@@ -443,9 +449,9 @@ input[type="radio"] {
   }
 
   .form__person:nth-child(5) .form__title {
+    max-width: 260px;
     margin-top: -30px;
     margin-bottom: 36px;
-    max-width: 260px;
   }
 }
 
@@ -470,10 +476,12 @@ input[type="radio"] {
   .form__person {
     &:first-child {
       width: 50%;
-      box-sizing: border-box;
+      margin-top: 10px;
       padding: 0;
       padding-right: 35px;
-      margin-top: 10px;
+      box-sizing: border-box;
+
+
 
       .form__field:nth-child(3) {
         margin-bottom: 0;
@@ -483,10 +491,10 @@ input[type="radio"] {
     &:nth-child(2) {
       width: 940px;
       box-sizing: border-box;
-      padding: 0 60px 0 60px;
       margin-left: 0;
       margin-right: 0;
       margin-bottom: 32px;
+      padding: 0 60px 0 60px;
     }
 
     &:nth-child(2) .form__title {
@@ -541,8 +549,8 @@ input[type="radio"] {
 
       textarea {
         min-height: 125px;
-        font-size: 18px;
         margin-bottom: 35px;
+        font-size: 18px;
       }
     }
 

@@ -1,7 +1,7 @@
 .modify {
-  background-color: @bg-lightgray;
   padding-bottom: 40px;
   padding-top: 10px;
+  background-color: @bg-lightgray;
 }
 
 .modify__tools {
@@ -14,14 +14,14 @@
 }
 
 .modify__btn {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
   border: none;
   outline: none;
   font-size: 0;
   cursor: pointer;
-  display: inline-block;
   vertical-align: middle;
-  width: 48px;
-  height: 48px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: @bg-lightgray;
@@ -71,10 +71,11 @@
 }
 
 .modify__group {
-  padding: 4px 40px 0 40px;
   width: auto;
-  border-bottom: 1px solid #dddfe0;
   margin-bottom: 39px;
+  padding: 4px 40px 0 40px;
+  border-bottom: 1px solid #dddfe0;
+
 }
 
 .modify__slider {
@@ -88,19 +89,19 @@
 .modify__bar {
   width: auto;
   height: 2px;
-  background-color: #000;
   margin: 33px auto;
+  background-color: #000;
 }
 
 .modify__pull {
+  position: absolute;
+  left: 190px;
+  top: -5px;
   width: 10px;
   height: 10px;
   background-color: #fff;
   border: 2px solid @red;
   border-radius: 50%;
-  position: absolute;
-  left: 190px;
-  top: -5px;
   cursor: pointer;
 
   &:active {
@@ -219,13 +220,13 @@
 
     &::after {
       content: "";
-      width: 280px;
-      height: 1px;
-      background-color: #dddfe0;
       display: block;
       position: absolute;
       left: -60px;
       bottom: 2px;
+      width: 280px;
+      height: 1px;
+      background-color: #dddfe0;
     }
   }
 
@@ -252,22 +253,23 @@
   }
 
   .modify__group {
-    width: 200px;
-    padding: 0;
-    margin: 0;
-    border: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    border: none;
+
   }
 
   .modify__tools {
     flex-direction: column;
     justify-content: space-between;
+    min-height: 172px;
+    margin-left: 13px;
     padding-top: 17px;
     padding-bottom: 12px;
-    margin-left: 13px;
-    min-height: 172px;
   }
 
   .modify__buttons {
@@ -327,9 +329,9 @@
   }
 
   .modify__tools {
-    padding-top: 10px;
-    margin-left: -3px;
     min-height: 195px;
+    margin-left: -3px;
+    padding-top: 10px;
   }
 
   .modify__group {

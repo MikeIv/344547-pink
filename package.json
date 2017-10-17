@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "del": "^3.0.0",
+    "gulp-svgmin": "^1.2.4",
     "normalize.css": "^7.0.0"
   }
 }

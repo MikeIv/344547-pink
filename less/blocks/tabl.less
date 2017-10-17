@@ -55,12 +55,12 @@
 
 .tabl__price {
   display: block;
-  color: @white;
+  padding-bottom: 18px;
   text-align: center;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
-  padding-bottom: 18px;
+  color: @white;
 }
 
 .tabl__cell {
@@ -103,9 +103,9 @@
     padding-top: 10px;
 
     &--hit {
+      position: relative;
       background-image: url(../img/bg-hit-tablet.svg);
       background-repeat: no-repeat;
-      position: relative;
     }
 
     &--hit::after {
@@ -143,8 +143,8 @@
     }
 
     &--first .tabl__price {
-      border-bottom: 2px solid #e5e5e5;
       padding-bottom: 8px;
+      border-bottom: 2px solid #e5e5e5;
     }
 
     &--first .tabl__cell {
