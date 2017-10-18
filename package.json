@@ -13,6 +13,7 @@
     "gulp-less": "3.3.x",
     "gulp-plumber": "1.1.x",
     "gulp-postcss": "7.0.x",
+    "gulp-posthtml": "^3.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-svgstore": "^6.1.0",
     "gulp-uglify": "^3.0.0",
