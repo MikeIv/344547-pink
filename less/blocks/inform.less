@@ -4,12 +4,11 @@
   margin: 0 auto;
   text-align: center;
 
-
   &__blocks {
     padding-top: 85px;
     padding: 58px 20px 32px 20px;
     background-image: url(../img/bg-triangle-white.svg);
-    background-position: top;
+    background-position: top center, 50% 0%;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: @bg-lightgray;
@@ -34,7 +33,6 @@
   &__promo {
     display: none;
   }
-
 }
 
 @media (min-width: @tablet-width) {
@@ -62,20 +60,23 @@
       flex-direction: column;
       justify-content: flex-start;
       max-width: 310px;
-      min-height: 450px;
+      min-height: 420px;
       margin: 0;
+      margin-top: 20px;
       padding: 0;
       text-align: left;
     }
 
 
-    &__iphone {
+    &__iphone1 {
       width: 265px;
+      min-height: 480px;
       margin: 0;
       padding: 0;
 
       img {
         width: 265px;
+        height: 485px;
       }
 
     }
@@ -86,8 +87,8 @@
       display: flex;
       width: auto;
       margin: 0 auto;
-      min-height: 490px;
-      margin-top: -65px;
+      min-height: 475px;
+      margin-top: -10px;
       padding-top: 40px;
       background-color: @white;
     }
@@ -127,8 +128,13 @@
       line-height: 36px;
     }
 
+    &__promo-header2 {
+      display: none;
+    }
+
     &__promo-text {
-      margin-bottom: 0;
+      margin-top: 10px;
+      margin-bottom: 5px;
       font-size: 14px;
       font-weight: @font-weight__regular;
       line-height: 24px;
@@ -156,10 +162,6 @@
 
     }
 
-  }
-
-  .inform__promo-header--desk {
-    display: none;
   }
 
 }
@@ -201,7 +203,7 @@
 
     &__item {
       width: 250px;
-      padding-top: 350px;
+      padding-top: 320px;
     }
 
     &__iphone-wrapper {
@@ -221,11 +223,14 @@
     &__iphone3,
     &__iphone4 {
       display: flex;
-      width: 290px;
+      width: 295px;
       height: 300px;
+      margin: 0;
+      padding-top: 0;
 
       img {
-        width: 350px;
+        width: 295px;
+        height: 300px;
       }
     }
 
@@ -241,12 +246,6 @@
     &__promo-wrapper {
       width: 940px;
       box-sizing: border-box;
-    }
-
-
-    &__promo-text {
-      max-width: 570px;
-      padding-top: 100px;
     }
 
   }
@@ -281,7 +280,7 @@
   .inform__promo-text {
     width: 550px;
     margin-bottom: 0;
-    padding-top: 8px;
+    padding-top: 15px;
     padding-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
